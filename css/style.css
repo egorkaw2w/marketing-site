@@ -1,0 +1,64 @@
+:root{
+    --background-color-dark: #06050F;
+    --font-color-black: #06050F;
+    --font-color-white: #FFFFFF;
+    --font-color-white-30: #FFFFFF30;
+    --font-family-Grotesk:"Schibsted Grotesk", sans-serif;
+    --btn-color: #CDA5D5;
+    --our-team: #E8FE74;
+}
+
+body{
+    background-color: var(--background-color-dark);
+}
+h1{
+    font-size: 96px;
+}
+h2{
+    font-size: 50px;
+}
+.font{
+    color: var(--font-color-white);
+    font-family: var(--font-family-Grotesk);
+    font-size: 30px;
+}
+a:hover{
+    color: white !important;
+    filter: brightness(120%);
+    text-decoration: dashed;
+
+}
+.title{
+    color: var( --font-color-white-30) ;
+}
+.font-light{
+    color: var(--font-color-white);
+}
+.font-dark{
+color: var(--font-color-black);
+}
+.join-btn{
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    width: 210px;
+    height: 65px;
+    font-size: 16px;
+    position: relative;
+}
+.join-btn::after{
+    content: url(/arrow.svg);
+    position: absolute;
+    left: 47px;
+    bottom: 13px;
+}
+.subtitle{
+    text-align: justify;
+}
+.our-team{
+    background-color: var(--our-team) ;
+}
+@media (max-width: 1000px){
+    .title{
+        font-size: 40px;
+    }
+}
